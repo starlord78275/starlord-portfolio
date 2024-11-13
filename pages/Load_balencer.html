@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load Balancer - Nitin's Portfolio</title>
+    <link rel="stylesheet" href="../styles/project.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="work.html">My Work</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <p class="sidebar-footer">@Nitin-Gavande</p>
+    </nav>
+
+    <main class="content">
+        <!-- Project Title -->
+        <h1>Load Balancer</h1>
+
+        <!-- Project Description -->
+        <section class="project-details">
+            <p class="project-description">
+                The Load Balancer project is designed to distribute incoming network traffic evenly across multiple servers. This setup enhances resource utilization, improves application performance, and ensures high availability by rerouting traffic in case of server failures.
+            </p>
+
+            <!-- Main Project Image -->
+            <div class="project-image">
+                <img src="../images/Load_balencer.jpg" alt="Load Balancer Main Screenshot">
+            </div>
+
+            <!-- Additional Screenshots (optional) -->
+            <!-- <div class="additional-screenshots">
+                <h2>Additional Screenshots</h2>
+                <div class="screenshot-gallery">
+                    <img src="../images/load-balancer-screenshot1.jpg" alt="Screenshot 1">
+                    <img src="../images/load-balancer-screenshot2.jpg" alt="Screenshot 2">
+                </div>
+            </div> -->
+
+            <!-- Project Features and Code Snippets (optional) -->
+            <div class="project-features">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Dynamic load distribution to prevent server overloads</li>
+                    <li>High availability with failover support</li>
+                    <li>Efficient resource utilization across servers</li>
+                </ul>
+
+                <h2>Code Snippet</h2>
+                <pre><code>
+// Example code snippet for distributing traffic in Load Balancer
+function distributeTraffic(request) {
+    const server = selectOptimalServer();
+    server.handleRequest(request);
+}
+                </code></pre>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© Nitin-Gavande. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

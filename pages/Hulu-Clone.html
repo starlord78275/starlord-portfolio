@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hulu Clone - Nitin's Portfolio</title>
+    <link rel="stylesheet" href="../styles/project.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="work.html">My Work</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <p class="sidebar-footer">@Nitin-Gavande</p>
+    </nav>
+
+    <main class="content">
+        <!-- Project Title -->
+        <h1>Hulu Clone</h1>
+
+        <!-- Project Description -->
+        <section class="project-details">
+            <p class="project-description">
+                The Hulu Clone project replicates the core features of the popular video streaming service, Hulu. Users can browse, search, and stream TV shows and movies. The platform includes a responsive design for various screen sizes, user authentication, and a media player with controls for video streaming. This app is built using the MERN stack (MongoDB, Express, React, Node.js), with additional features like user profiles, playlists, and recommendations.
+            </p>
+
+            <!-- Main Project Image -->
+            <div class="project-image">
+                <img src="../images/Hulu-Clone.jpg" alt="Hulu Clone Main Screenshot">
+            </div>
+
+            <!-- Additional Screenshots (optional) -->
+            <!-- <div class="additional-screenshots">
+                <h2>Additional Screenshots</h2>
+                <div class="screenshot-gallery">
+                    <img src="../images/hulu-clone-screenshot1.jpg" alt="Screenshot 1">
+                    <img src="../images/hulu-clone-screenshot2.jpg" alt="Screenshot 2">
+                </div>
+            </div> -->
+
+            <!-- Project Features and Code Snippets (optional) -->
+            <div class="project-features">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>TV shows and movie streaming with video player controls</li>
+                    <li>User authentication and profile management</li>
+                    <li>Responsive design for various devices</li>
+                    <li>Video recommendations based on user preferences</li>
+                </ul>
+
+                <h2>Code Snippet</h2>
+                <pre><code>
+// Example code snippet for video streaming
+app.get('/video/:id', (req, res) => {
+    const videoId = req.params.id;
+    Video.findById(videoId).then(video => {
+        res.json({
+            title: video.title,
+            url: video.streamUrl
+        });
+    });
+});
+                </code></pre>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© Nitin-Gavande. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

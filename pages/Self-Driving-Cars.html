@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Driving Cars Simulation - Nitin's Portfolio</title>
+    <link rel="stylesheet" href="../styles/project.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="work.html">My Work</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <p class="sidebar-footer">@Nitin-Gavande</p>
+    </nav>
+
+    <main class="content">
+        <!-- Project Title -->
+        <h1>Self-Driving Cars Simulation (Raw JavaScript with CNN)</h1>
+
+        <!-- Project Description -->
+        <section class="project-details">
+            <p class="project-description">
+                The Self-Driving Cars Simulation project leverages Convolutional Neural Networks (CNN) to enable a car simulation to autonomously navigate a road. Built with raw JavaScript, this project simulates the car's decision-making process, utilizing CNNs to interpret the environment and avoid obstacles. The project demonstrates the core principles behind autonomous vehicle systems, including image recognition and pathfinding.
+            </p>
+
+            <!-- Main Project Image -->
+            <div class="project-image">
+                <img src="../images/Self-Driving-Cars.jpg" alt="Self-Driving Cars Simulation Screenshot">
+            </div>
+
+            <!-- Additional Screenshots (optional) -->
+            <!-- <div class="additional-screenshots">
+                <h2>Additional Screenshots</h2>
+                <div class="screenshot-gallery">
+                    <img src="../images/self-driving-cars-screenshot1.jpg" alt="Screenshot 1">
+                    <img src="../images/self-driving-cars-screenshot2.jpg" alt="Screenshot 2">
+                </div>
+            </div> -->
+
+            <!-- Project Features and Code Snippets (optional) -->
+            <div class="project-features">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Real-time obstacle detection and avoidance using CNN</li>
+                    <li>Car pathfinding through image analysis</li>
+                    <li>Simulation of autonomous decision-making in a dynamic environment</li>
+                    <li>Built with raw JavaScript, without external machine learning libraries</li>
+                </ul>
+
+                <h2>Code Snippet</h2>
+                <pre><code>
+// Example code snippet for CNN-based decision-making
+function cnnPredict(imageData) {
+    // Assume cnnModel is a pre-trained CNN model loaded in the environment
+    const prediction = cnnModel.predict(imageData);
+    
+    if (prediction === 'left') {
+        turnLeft();
+    } else if (prediction === 'right') {
+        turnRight();
+    } else {
+        moveForward();
+    }
+}
+                </code></pre>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© Nitin-Gavande. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

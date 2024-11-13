@@ -1,0 +1,299 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'RetroComputer', monospace;
+    /* font-family: 'Arial', sans-serif; */
+    background-image: url(../images/background1.jpg);
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sliding-name {
+    white-space: nowrap;
+    font-size: 11rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    animation: slide 20s linear infinite;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@font-face {
+    font-family: 'RetroComputer';
+    src: url('./fonts/ARCADECLASSIC.TTF') format('truetype');
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -180px; /* Initially hidden */
+    width: 180px;
+    height: 100%;
+    background: rgba(36, 36, 36, 0.2); /* Dark glass effect */
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.7);
+    transition: left 0.4s ease;
+    font-family: 'RetroComputer', monospace;
+    color: #B9D9EB;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 10;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #B9D9EB;
+    padding: 10px 15px;
+    display: block;
+    transition: 0.3s;
+    font-family: 'RetroComputer', monospace;
+}
+
+.sidebar ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.sidebar-footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 10px;
+    color: #B9D9EB;
+    background: rgba(36, 36, 36, 0.2);
+    font-family: 'RetroComputer', monospace;
+    font-size: 0.8rem;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+/* Sidebar hover reveal */
+body:hover .sidebar {
+    left: -180px;
+}
+
+body:hover .sidebar:hover {
+    left: 0; /* Slide in on hover */
+}
+
+
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .sliding-name {
+        font-size: 5rem;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        top: 0;
+        left: 0;
+        border-radius: 0;
+    }
+
+    .sidebar-toggle {
+        display: block;
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        background: rgba(255, 255, 255, 0.2);
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        z-index: 20;
+    }
+
+    .video-window {
+        width: 90%;
+        height: auto;
+    }
+
+    .video-window.large,
+    .video-window.small {
+        width: 100%;
+        height: auto;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .video-caption {
+        font-size: 1rem;
+    }
+}
+
+/* @font-face {
+    font-family: 'ARCADECLASSIC';
+    font-weight: 1700;
+    font-size: larger;
+    src: url('ARCADECLASSIC.TTF') format('truetype');
+} */
+
+.content h1 {
+    margin-left: 3%;
+}
+
+.portfolio-container {
+    display: flex;
+    width: 80%;
+    height: 70vh;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eaeaea;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.5s;
+}
+
+.project-details {
+    flex: 1;
+    padding: 20px;
+}
+
+.project-details h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.project-details p {
+    color: #555;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+button:hover {
+    background-color: #555;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-item {
+    padding: 10px;
+    margin: 12px;
+}
+
+
+/* portfolio project */
+.portfolio-container {
+    display: flex;
+    width: 90%;
+    height: 75vh;
+    background-color: #ffffff;
+    /* margin: 20px auto; */
+    margin: 0 20px 20px 20px;
+}
+
+.project-index {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    height: 70vh; /* Fixed height for scrollable area */
+    overflow-y: auto; /* Adds vertical scroll if content overflows */
+    scrollbar-width: hidden; /* Optional: Make scrollbar thinner */
+}
+
+/* Optional styling for the scrollbar (works in WebKit browsers like Chrome, Safari) */
+.project-index::-webkit-scrollbar {
+    width: 8px;
+}
+
+.project-index::-webkit-scrollbar-track {
+    background: #333;
+}
+
+.project-index::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 10px;
+}
+
+.project-index::-webkit-scrollbar-thumb:hover {
+    background: #777;
+}
+
+.project-item {
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+.project-item:hover {
+    background-color: #555;
+}
+.project-image {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eaeaea;
+}
+.project-image img {
+    width: auto;
+    height: 100%;
+    transition: opacity 0.5s;
+}

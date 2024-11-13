@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Clone - Nitin's Portfolio</title>
+    <link rel="stylesheet" href="../styles/project.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="work.html">My Work</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <p class="sidebar-footer">@Nitin-Gavande</p>
+    </nav>
+
+    <main class="content">
+        <!-- Project Title -->
+        <h1>Twitter Clone</h1>
+
+        <!-- Project Description -->
+        <section class="project-details">
+            <p class="project-description">
+                The Twitter Clone project replicates the core features of the popular social media platform, Twitter. Users can post tweets, like and retweet posts, follow other users, and receive real-time updates. This app is built using the MERN stack (MongoDB, Express, React, Node.js).
+            </p>
+
+            <!-- Main Project Image -->
+            <div class="project-image">
+                <img src="../images/Twitter-clone(MERN).jpg" alt="Twitter Clone Main Screenshot">
+            </div>
+
+            <!-- Additional Screenshots (optional) -->
+            <!-- <div class="additional-screenshots">
+                <h2>Additional Screenshots</h2>
+                <div class="screenshot-gallery">
+                    <img src="../images/twitter-clone-screenshot1.jpg" alt="Screenshot 1">
+                    <img src="../images/twitter-clone-screenshot2.jpg" alt="Screenshot 2">
+                </div>
+            </div> -->
+
+            <!-- Project Features and Code Snippets (optional) -->
+            <div class="project-features">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Real-time tweeting, liking, and retweeting</li>
+                    <li>Follow and unfollow users</li>
+                    <li>Real-time updates and notifications</li>
+                    <li>User authentication with JWT tokens</li>
+                </ul>
+
+                <h2>Code Snippet</h2>
+                <pre><code>
+// Example code snippet for posting a tweet
+app.post('/tweet', (req, res) => {
+    const { userId, content } = req.body;
+    const newTweet = new Tweet({ userId, content });
+    newTweet.save().then(tweet => res.json(tweet));
+});
+                </code></pre>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© Nitin-Gavande. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
