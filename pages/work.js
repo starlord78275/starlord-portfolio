@@ -15,6 +15,8 @@ document.querySelectorAll('.project-item').forEach(item => {
     item.addEventListener('click', function() {
         // Create URL-friendly project name for navigation
         const projectName = this.textContent.trim().toLowerCase().replace(/ /g, '-');
-        window.location.href = `${projectName}.html`; // Redirect to individual project page
+        
+        // Adjust path to point to the pages folder
+        window.location.href = `pages/${projectName}.html`; // Redirect to the correct project page inside the pages folder
     });
 });
