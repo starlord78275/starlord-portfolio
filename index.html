@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nitin Gavande | AI/ML Engineer Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="header" id="top">
+    <div class="container header-inner">
+      <div class="logo">Nitin<span>G</span></div>
+
+      <nav class="nav" id="nav">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div>
+          <p class="hero-kicker">AI/ML Engineer · Computer Vision · Data Science</p>
+          <h1 id="hero-title" class="hero-title">Hi, I'm Nitin Gavande.</h1>
+          <p class="hero-subtitle">
+            Self-taught ML engineer building intelligent, data-driven systems that connect software with the physical world. 
+            Experienced in developing ML models, computer vision systems, and automation tools using Python, TensorFlow, and scikit-learn.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero-aside">
+          <div class="hero-card">
+            <p class="hero-tag">Currently</p>
+            <p>Looking for AI/ML Engineer and Data Science roles where I can ship production ML systems.</p>
+            <p class="hero-location">Based in Nashik, Maharashtra, India.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container section-inner">
+        <div class="section-header">
+          <h2>About</h2>
+          <p>Who I am and what drives my work in AI and ML.</p>
+        </div>
+        <div class="grid-2">
+          <p>
+            I'm an AI & Machine Learning Engineer passionate about building intelligent systems that solve real-world problems. 
+            My journey started with freelance automation projects for small businesses, where I reduced manual effort by 40–60% 
+            through barcode scanning systems and predictive inventory tools.
+          </p>
+          <p>
+            Today, I focus on ML model development, computer vision, and deploying production-grade APIs. 
+            I've shipped projects like real-time emotion recognition systems (89% accuracy), SDN routing optimizers (67% efficiency gain), 
+            and eye-tracking applications recognized by the OpenCV community. My long-term vision is to create advanced AI-powered 
+            hardware and manufacturing technologies.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section section-alt">
+      <div class="container section-inner">
+        <div class="section-header">
+          <h2>Skills</h2>
+          <p>Technologies and tools I use to build, train, and deploy ML systems.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skills-group">
+            <h3>Languages</h3>
+            <ul>
+              <li>Python (Strong)</li>
+              <li>JavaScript / TypeScript (Intermediate)</li>
+              <li>Go (Beginner)</li>
+              <li>SQL</li>
+              <li>C++</li>
+            </ul>
+          </div>
+
+          <div class="skills-group">
+            <h3>ML & Data</h3>
+            <ul>
+              <li>TensorFlow / Keras</li>
+              <li>PyTorch</li>
+              <li>scikit-learn</li>
+              <li>OpenCV</li>
+              <li>MediaPipe</li>
+              <li>NumPy, pandas</li>
+              <li>Matplotlib, Seaborn</li>
+            </ul>
+          </div>
+
+          <div class="skills-group">
+            <h3>Backend & APIs</h3>
+            <ul>
+              <li>FastAPI</li>
+              <li>Flask</li>
+              <li>REST APIs</li>
+              <li>Docker</li>
+            </ul>
+          </div>
+
+          <div class="skills-group">
+            <h3>Frontend</h3>
+            <ul>
+              <li>React.js / Next.js</li>
+              <li>Streamlit</li>
+              <li>HTML & CSS</li>
+            </ul>
+          </div>
+
+          <div class="skills-group">
+            <h3>Databases</h3>
+            <ul>
+              <li>PostgreSQL</li>
+              <li>MySQL</li>
+              <li>MongoDB</li>
+            </ul>
+          </div>
+
+          <div class="skills-group">
+            <h3>Tools & DevOps</h3>
+            <ul>
+              <li>Git & GitHub</li>
+              <li>Jupyter / Google Colab</li>
+              <li>MLflow</li>
+              <li>Kaggle</li>
+              <li>Hugging Face Spaces</li>
+              <li>Prometheus</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container section-inner">
+        <div class="section-header">
+          <h2>Projects</h2>
+          <p>Selected work showcasing ML model development, computer vision, and production deployment.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <h3>Smart SDN Routing Optimizer</h3>
+            <p class="project-meta">ML · Backend · Networking</p>
+            <p>
+              ML-driven Software-Defined Networking model that optimizes routing decisions in real time, 
+              improving network efficiency and reducing latency.
+            </p>
+            <ul class="project-points">
+              <li>Improved routing efficiency by 67% using predictive algorithms trained on ~200k synthetic flows.</li>
+              <li>Boosted mean throughput by 31% and reduced p95 latency by 18% in Mininet fat-tree tests.</li>
+              <li>Deployed as a FastAPI microservice with Prometheus metrics and Docker containerization for reproducible runs.</li>
+            </ul>
+            <p class="project-tech">Tech: Python, scikit-learn, FastAPI, Docker, Mininet, Prometheus</p>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noreferrer">Live Demo</a>
+              <a href="#" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <h3>ER_Music (Emotion Recognition System)</h3>
+            <p class="project-meta">Computer Vision · ML · Real-time</p>
+            <p>
+              CNN-based emotion recognition system that detects facial emotions in real time 
+              and recommends music playlists based on detected mood.
+            </p>
+            <ul class="project-points">
+              <li>Achieved 89% accuracy on FER2013 dataset using MobileNetV2 with focal loss, optimized for CPU deployment.</li>
+              <li>Integrated MTCNN face detection and temporal smoothing; runs at ~22 FPS on i5-8250U.</li>
+              <li>Built an interactive Streamlit GUI for real-time emotion mapping and playlist recommendations.</li>
+            </ul>
+            <p class="project-tech">Tech: TensorFlow/Keras, OpenCV, Streamlit, MTCNN</p>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noreferrer">Live Demo</a>
+              <a href="#" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <h3>Anime_Eyes Tracker</h3>
+            <p class="project-meta">Computer Vision · Real-time</p>
+            <p>
+              Webcam-based eye-tracking application with anime-style visual effects using 
+              facial landmark detection and gesture recognition.
+            </p>
+            <ul class="project-points">
+              <li>Implemented MediaPipe Hands + Selfie Segmentation running at 720p resolution, achieving ~60 FPS on RTX-class GPU.</li>
+              <li>Designed real-time visual rendering with sub-15ms frame processing using OpenCV CUDA optimization.</li>
+              <li>Recognized by the OpenCV community for creative use of computer vision techniques.</li>
+            </ul>
+            <p class="project-tech">Tech: Python, OpenCV, MediaPipe, CUDA</p>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noreferrer">Live Demo</a>
+              <a href="#" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section section-alt">
+      <div class="container section-inner">
+        <div class="section-header">
+          <h2>Experience</h2>
+          <p>Professional work building automation systems and ML-powered tools.</p>
+        </div>
+
+        <div class="experience-list">
+          <article class="experience-item">
+            <div class="experience-header">
+              <h3>Freelance Developer</h3>
+              <span class="experience-period">2017 – 2021</span>
+            </div>
+            <p class="experience-company">Independent</p>
+            <ul class="experience-points">
+              <li>Delivered 12+ custom automation solutions for small businesses and warehouses across Maharashtra.</li>
+              <li>Built barcode scanning and inventory management system (ZBar + Flask) that reduced manual effort by 60–70%, cutting stock count time from 5 hours to 1.8 hours.</li>
+              <li>Developed web dashboards and Python-based REST APIs for local retail clients to streamline operations.</li>
+              <li>Integrated predictive stock forecasting models using Prophet, achieving ~12% MAPE for sales prediction.</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="section-header" style="margin-top: 2.5rem;">
+          <h3>Education</h3>
+        </div>
+        <div class="education-item">
+          <p><strong>B.E., Information Technology</strong></p>
+          <p>Pune Vidyarthi Griha's College of Engineering & SSD Dhamankar Institute of Management, Nashik</p>
+          <p class="education-year">Graduated 2024</p>
+        </div>
+
+        <div class="section-header" style="margin-top: 2.5rem;">
+          <h3>Certifications</h3>
+        </div>
+        <div class="education-item">
+          <p><strong>Data Science with Python</strong> – Technogeeks (June 2025)</p>
+          <p style="color: var(--muted); font-size: 0.9rem;">Certificate ID: DSPC-2232</p>
+          <p style="color: var(--muted); font-size: 0.9rem;">
+            Topics: Python, pandas, NumPy, data visualization (Matplotlib, Seaborn), ML model development with scikit-learn, and NLP basics.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container section-inner">
+        <div class="section-header">
+          <h2>Contact</h2>
+          <p>Open to AI/ML Engineer, Data Science, and Computer Vision roles.</p>
+        </div>
+
+        <div class="contact-inner">
+          <p>
+            Looking to collaborate on ML projects, discuss job opportunities, or just connect? 
+            Reach out and I'll get back to you as soon as possible.
+          </p>
+          <ul class="contact-list">
+            <li>Email: <a href="mailto:bhimgavande.777@gmail.com">bhimgavande.777@gmail.com</a></li>
+            <li>Portfolio: <a href="https://portfoliostark.web.app" target="_blank" rel="noreferrer">portfoliostark.web.app</a></li>
+            <li>GitHub: <a href="https://github.com/starlord78275" target="_blank" rel="noreferrer">github.com/starlord78275</a></li>
+            <li>LinkedIn: <a href="#" target="_blank" rel="noreferrer">linkedin.com/in/yourusername</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Nitin Gavande. All rights reserved.</p>
+      <a href="#top" class="back-to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
